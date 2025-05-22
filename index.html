@@ -32,7 +32,6 @@
     async function generar() {
       const prompt = document.getElementById("prompt").value;
       const respuesta = await fetch("https://47b9104b-2d5c-4da2-9714-3b41d66c91db-00-3usdt51jtfqwi.picard.replit.dev/generate", {
-, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt })
